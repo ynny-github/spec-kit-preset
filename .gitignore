@@ -1,0 +1,5 @@
+# common
+tmp/
+
+# python
+.venv/

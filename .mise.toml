@@ -1,0 +1,9 @@
+[tools]
+python = "3.12"
+usage = "2.2.2"
+uv = "0.8"
+
+[env]
+_.path = "./bin"
+
+_.python.venv = { path = ".venv", create = true }
