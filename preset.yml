@@ -1,0 +1,32 @@
+schema_version: "1.0"
+
+preset:
+  id: "ears-notation"
+  name: "EARS Notation"
+  version: "0.1.0"
+  description: "Write functional requirements in EARS (Easy Approach to Requirements Syntax)"
+  author: "Yuya Nagai"
+  repository: "https://github.com/yuya-nagai/spec-kit-preset"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.1.0"
+
+provides:
+  templates:
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Inject EARS notation guide before the specify command"
+      strategy: "prepend"
+
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-template.md"
+      description: "Spec template with EARS-formatted requirements examples"
+      strategy: "replace"
+
+tags:
+  - "ears"
+  - "requirements"
+  - "notation"
